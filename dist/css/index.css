@@ -1,0 +1,103 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+
+/** removes greybox around button **/
+button.hamspam {
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 2147483647 !important;
+}
+
+button.hamspam > svg:nth-child(1) {
+  width: 27px;
+  height: 27px;
+  margin: 3.5px;
+  padding: 0;
+  stroke: #000;
+  stroke-width: 1px;
+  stroke-linejoin: round;
+  border: 1.5px solid #666;
+  border-radius: 5px;
+  background: transparent;
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button.hamspam > svg:nth-child(1).hamspam-secure {
+  fill: #0071bc;
+  background: #4dabf7;
+  padding: 0px;
+}
+
+button.hamspam > svg:nth-child(1).hamspam-warning {
+  fill: #fdb81e;
+  background: #f9c642;
+  padding: 0.5px;
+}
+
+button.hamspam > svg:nth-child(1).hamspam-critical {
+  fill: #ff454d;
+  background: #ff6970;
+  border-radius:100%;
+  padding: 2px;
+  width: 28px;
+  height: 28px;
+}
+
+.popover {
+  font-family: "Helvetica", "Arial", sans-serif !important;
+  border-radius: 3px;
+  user-select: text;
+  width: max-content !important;
+  max-width: 22vw !important;
+}
+
+.popover > * {
+  color: #333;
+  cursor: default;
+}
+
+.popover-header {
+  font-size: 12px;
+  font-weight: 600;
+  background: #f9f9f9;
+  border-bottom: .5px solid #ccc;
+  padding: 4px 5px 2px 6px;
+  margin-bottom: -3px;
+}
+
+.popover-body {
+  font-size: 12px;
+  padding: 5px 5px 4px 6px;
+}
+
+.popover-body > * > ul {
+  margin: 0;
+  padding-inline-start: 1em;
+  list-style-type: circle;
+}
+
+.bs-popover-auto, .bs-popover-right, .bs-popover-bottom, .bs-popover-left, .bs-popover-top {
+  border: 0.75px solid #ccc;
+}
+
+.bs-popover-right > .arrow::before {
+  border-right-color: #555;
+}
+
+.bs-popover-bottom > .arrow::before {
+  border-bottom-color: #555;
+}
+
+.bs-popover-left > .arrow::before {
+  border-left-color: #555;
+}
+
+.bs-popover-top > .arrow::before {
+  border-top-color: #555;
+}
+
+.shadow-sm {
+  box-shadow: 0 0 0.08rem rgba(0, 0, 0, 1.0) !important;
+}

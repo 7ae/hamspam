@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "@types/chrome": "0.0.95",
+    "@types/jquery": "^3.3.32",
+    "@types/js-yaml": "^3.12.1",
+    "@types/node": "^12.11.6",
+    "@types/tesseract.js": "0.0.2",
+    "js-yaml": "^3.13.1",
+    "ts-loader": "^6.2.0",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "@types/bootstrap": "^4.3.1",
+    "@types/uuid": "^8.0.0",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "tesseract.js": "^2.0.2",
+    "uuid": "^8.1.0"
+  },
+  "scripts": {
+    "test": "echo 'test not implemented'",
+    "develop": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  }
+}

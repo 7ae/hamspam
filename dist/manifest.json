@@ -1,0 +1,26 @@
+﻿{
+	"manifest_version": 2,
+	"name": "Hamspam",
+	"version": "1.0",
+
+	"author": "Jay",
+	"description": "Provide visual feedback about spamminess of emails",
+	"homepage_url": "https://github.com/7ae/hamspam",
+	"background": {
+		"scripts": [
+			"background.js"
+		],
+		"persistent": true
+	},
+	"browser_action": {
+		"default_title": "Run Hamspam"
+	},
+	"permissions": [
+		"https://*/",
+		"http://*/",
+		"contextMenus"
+	],
+	"web_accessible_resources": [
+		"/*"
+	]
+}

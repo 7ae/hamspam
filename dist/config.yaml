@@ -1,0 +1,351 @@
+---
+email:
+  - {name: Outlook, hostname: outlook.office.com, view: OutlookView}
+
+sender-whitelist:
+  - email@example.com
+  - \*@\*.example.com
+  - demo@example.com
+  - admin@example.com
+
+late-delivery:
+  #60 = 1hr
+  from: 300 #300 = 5hrs = 5am
+  to: 1320  #1320 = 22hrs = 10pm
+
+suspicious-file-extensions:
+  - ade       #ADC Audio File
+  - adp       #Access Project (Microsoft)
+  - app       #Executable Application
+  - asp       #Active Server Page
+  - bas       #BASIC Source Code
+  - bat       #Bath Processing
+  - cer       #Internet Security Certificate File
+  - chm       #Complied HTML Help
+  - cla       #Java class File
+  - class     #Java class File
+  - cmd       #DOS CP/M Command File, Command File for Windows NT
+  - cnt       #Help file index
+  - com       #Command
+  - cpl       #Windows Control Panel Extension (Microsoft)
+  - crt       #Certificate File
+  - csh       #csh Script
+  - der       #DER Encoded X509 Certificate File
+  - exe       #Executable File
+  - fxp       #FoxPro Compiled Source (Microsoft)
+  - gadget    #Windows Vista gadget
+  - grp       #Microsoft Windows Program Group
+  - hlp       #Windows Help Filex
+  - hpj       #Project file used to create Windows Help File
+  - hta       #Hypertext Application
+  - inf       #Information or Setup File
+  - ins       #IIS Internet Communications Settings (Microsoft)
+  - isp       #IIS Internet Service Provider Settings (Microsoft)
+  - its       #Internet Document Set, Internet Translation
+  - jar       #Compressed archive file package for Java classes and data
+  - js        #JavaScript Source Code
+  - jse       #JScript Encoded Script File
+  - ksh       #UNIX Shell Script
+  - lnk       #Windows Shortcut File
+  - mad       #Acces Module Shortcut (Microsoft)
+  - maf       #Access (Microsoft)
+  - mag       #Access Diagram Shortcut (Microsoft)
+  - mam       #Access Macro Shortcut (Microsoft)
+  - maq       #Access Query Shortcut (Microsoft)
+  - mar       #Access Report SHortcut (Microsoft)
+  - mas       #Access Stored Procedures (Microsoft)
+  - mat       #Access Table Shortcut (Microsoft)
+  - mau       #Media Attachment Unit
+  - mav       #Access View Shortcut (Microsoft)
+  - maw       #Access Data Access Page (Microsoft)
+  - mcf       #MMS Composer File
+  - mda       #Access Add-in (Microsoft), MDA Access 2 Workgroup (Microsoft)
+  - mdb       #Access Application (Microsoft), MDB Access Database (Microsoft)
+  - mde       #Access MDE Database File (Microsoft)
+  - mdt       #Access Add-in Data (Microsoft)
+  - mdw       #Access Workgroup Information (Microsoft)
+  - mdz       #Access Wizard Template (Microsoft)
+  - msc       #Microsoft Management Console Snap-in Control File (Microsoft)
+  - msh       #Microsoft Shell
+  - msh1      #Microsoft Shell
+  - msh2      #Microsoft Shell
+  - mshxml    #Microsoft Shell
+  - msh1xml   #Microsoft Shell
+  - msh2xml   #Microsoft Shell
+  - msi       #Widows Installer File (Microsoft)
+  - msp       #Windows Installer Update
+  - mst       #Windows SDK Setup Transform Script
+  - ocx       #ActiveX Control file
+  - ops       #Office Profile Settings File
+  - osd       #Application virtualized with Microsoft SoftGrid Sequencer
+  - pcd       #Visual Test (Microsoft)
+  - pif       #Windows Program Information File (Microsoft)
+  - pl        #Perl script language source code
+  - plg       #Developer Studio Build Log
+  - prf       #Windows System File
+  - prg       #Program File
+  - pst       #MS Exchange Address Book File, Outlook Personal Folder File (Microsoft)
+  - reg       #Registration Information/Key for W95/98, Registry Data File
+  - scf       #Windows Explorer Command
+  - scr       #Windows Screen Saver
+  - sct       #Windows Script Component, Foxpro Screen (Microsoft)
+  - shb       #Windows Shourtcut into a Document
+  - shs       #Shell Scrap Object File
+  - ps1       #Windows PowerShell
+  - ps1xml    #Windows PowerShell
+  - ps2       #Windows PowerShell
+  - ps2xml    #Windows PowerShell
+  - psc1      #Windows PowerShell
+  - psc2      #Windows PowerShell
+  - tmp       #Temporary File/Folder
+  - url       #Internet Location
+  - vb        #VBScript File or Any VisualBasic Source
+  - vbe       #VBScript Encoded Script File
+  - vbp       #Visual Basic project file
+  - vbs       #VBScript Script File, Visual Basic for Applications Script
+  - vsmacros  #Visual Studio .NET Binary-based Macro Project (Microsoft)
+  - vsw       #Visio Workspace File (Microsoft)
+  - ws        #Windows Script File
+  - wsc       #Windows Script Component
+  - wsf       #Windows Script File
+  - wsh       #Windows Script Host Settings File
+  - xbap      #Silverlight Application Package
+  - xnk       #Exchange Public Folder Shortcut
+  - docm      #Microsoft Word Macro
+  - doc       #Microsoft Word Macro
+  - xlsm      #Microsoft Excel Macro
+  - xls       #Microsoft Excel Macro
+  - pptm      #Microsoft PowerPoint Macro
+  - ppt       #Microsoft PowerPoint Macro
+
+spam-words:
+  - social security number(s)?
+  - SSN
+  - username
+  - bank account number(s)?
+  - maiden name
+  - birth (day|date)
+  - (\W|..)\$ \d+(\.\d+)?
+  - ad
+  - (for )?f r e e
+  - \W\# 1
+  - 100 % (free)?
+  - \d+(.\d+)?( )? % (off|free|satisfied)
+  - all new
+  - bargain
+  - best price
+  - bonus
+  - brand new
+  - cost(s)?
+  - discount
+  - (don't|dont|do not) (delete|hesitate)
+  - marketing
+  - gift (card)?
+  - giv(e|ing)( it)? away
+  - great offer
+  - dollars
+  - incredible deal
+  - (insurance|mortgage) (rate(|s))?
+  - internet
+  - effective
+  - low(er|est) (interest)? (rate(|s))
+  - luxury( car)?
+  - name brand
+  - one hundred percent free
+  - please read
+  - prize(s)?
+  - profit(s)?
+  - sale(s)?
+  - sample
+  - satisfaction
+  - on sale
+  - (best)? rate(s)?
+  - spam
+  - web traffic
+  - (credit)? card(s)? (accepted|(offer(|s))?)?
+  - as seen on
+  - pay (check|stub)
+  - click( below| here| to remove)?
+  - deal
+  - debt
+  - direct email
+  - do it today
+  - form
+  - free (access|instant)
+  - (full)? refund
+  - investment
+  - life( insurance)?
+  - lifetime
+  - (month )?trial offer(s)?
+  - not (junk|spam)
+  - notspam
+  - looking for someone
+  - obligation
+  - opt(-)?in
+  - order(s) (now|shipped|status|today)?
+  - per (day|week)
+  - (cell|mobile|work|home)? phone
+  - presently
+  - price(s)?
+  - print (from signature|out and fax)
+  - priority mail
+  - purchase(s|d)?
+  - (remove|removal) instruction(s)?
+  - serious (only)?
+  - sign up (free today)?
+  - subscribe
+  - work independently
+  - take action (now)?
+  - terms and conditions
+  - unlimited (trial)?
+  - waiting for?
+  - visit (our|their) website
+  - act now (!)?
+  - buy(ing)? (direct)?
+  - call (free|now)
+  - clearance
+  - enclosed
+  - exclusive deal
+  - expire(s)?
+  - get (it|started) now
+  - important information
+  - instant
+  - limited (time)? (offer|only)?
+  - new customers only
+  - now only
+  - once in (a)? lifetime
+  - lift time
+  - one(-)?time
+  - special promotion
+  - supplies (are limited)?
+  - (won't|wont|will not) last
+  - time limited
+  - urgent(ly)?
+  - 4 u
+  - acceptance
+  - bankrupt(cy)?
+  - being a member
+  - boss
+  - bulk email
+  - cancel (at any time)?
+  - certified
+  - chance
+  - cheap
+  - compare rate(|s)
+  - congrat(s|ulations)
+  - cures (baldness)?
+  - dear (friend(|s))
+  - dormant
+  - suspend(ed)?
+  - easy terms
+  - expect to earn
+  - free (info|installation|membership|hosting|(grant )?money)
+  - guarantee(d)?
+  - stranger
+  - info(rmation)? you requested
+  - mass email
+  - member
+  - no (experience|inventory|investment)
+  - opportunity
+  - approved
+  - save ($ |money|for yourself)
+  - thousands
+  - win(ner|ning)?
+  - earn ($ |(extra)? cash |per week )?
+  - extra (cash|income)
+  - fantastic (deal )?
+  - get paid
+  - paid (part|full)time (job|position)
+  - income
+  - make ($ |money)
+  - money (bank|making)
+  - no fee(s)?
+  - no interest(s)?
+  - risk free
+  - vacation
+  - weight (loss)?
+  - work (at|from)? home
+  - beneficiary
+  - beverage
+  - (billing|home|your)? (address(|es)?)
+  - casino
+  - celebrity
+  - legal
+  - diagnostics
+  - hidden
+  - junk
+  - laws
+  - loan(s)?
+  - medicine
+  - meet single(s)?
+  - message contains (disclaimer)?
+  - miracle
+  - nigerian
+  - off( )?shore
+  - online (degree|marketing|pharmacy)
+  - password(s)?
+  - refinance
+  - flexible
+  - reward(ing)?
+  - I tried it
+  - employment
+  - apply (here|now)?
+  - weekly pay
+  - zip code
+  - (We|I) may need (you)?
+  - bank
+  - (first|last) name
+  - email your details to
+  - for kids
+  - IP
+  - satisfactorily
+  - click here
+  - upgrade
+  - in a timely manner
+  - your email account
+  - unknown location
+  - validat(e|ion)
+  - recommend
+  - 100%
+  - legit
+  - takes less than
+  - email with your details
+  - $ \d+ weekly
+  - $ \d+ per week
+  - compensated
+  - 18\+
+  - anyone can
+  - without affecting
+  - (doesn't|does not|doesnt) affect
+  - extra benefit(s)?
+  - more details (here)?
+  - in touch with you
+  - recruit(ing|ment)?
+  - cool cash
+  - read more
+  - position available
+  - survey|questionnaire
+  - shopper(s)?
+  - (part|full)(-)?time( job)?
+  - fear
+  - (will not|won't|wont) affect
+  - (make|earn) up to
+  - what can you expect
+  - security (alert)?
+  - administrative
+  - receiv(e|ing) payment
+  - information below
+  - instructed to
+  - share with us
+  - to register
+  - you will only
+  - error(s)?
+  - you will get $ d+
+  - available to all
+  - personal assistan(t|ce)
+  - you (\'ve|have) won
+  - ATTN|attention
+  - confirm(ation)?
+  - DRIVE N EARNS PROGRAM
+  - URGENT MESSAGE FROM THE UNIVERSITY
+  - SF ALERT
